@@ -1,8 +1,7 @@
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Container} from "react-bootstrap";
 import logo from "../../assets/logo-color-wave.jpg";
-// import { NavLink, Link, useNavigate } from "react-router-dom";
 
-const Menu = ({ usuarioLogeado, setUsuarioLogeado }) => {
+const Menu = () => {
 
   return (
     <Navbar expand="lg">
