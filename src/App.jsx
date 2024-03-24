@@ -1,11 +1,17 @@
+import Inicio from "./pages/Inicio";
+import Menu from './pages/common/Menu'
+import Footer from './pages/common/Footer'
 
 function App() {
-
   return (
     <>
-      <h1>hola</h1>
+    <Menu/>
+    <Inicio/>
+    <Footer/>
+    
     </>
-  )
+
+  );
 }
 
-export default App
+export default App;
