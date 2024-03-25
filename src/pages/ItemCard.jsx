@@ -18,7 +18,7 @@ const ItemCard = ({ color, setColores }) => {
       cancelButtonText: "Cancelar"
     }).then(async(result) => {
       if (result.isConfirmed) {
-        const respuesta = await borrarColor(color.id)
+        const respuesta = await borrarColor(color._id)
         if (respuesta.status === 200) {
           Swal.fire({
             title: "Color eliminado",
@@ -53,7 +53,7 @@ const ItemCard = ({ color, setColores }) => {
           <div className="color-display" style={colorStyle}></div>
           <div className="d-flex gap-3">
           <Button variant="primary" onClick={eliminarColor}>Eliminar</Button>
-          <Link className="me-lg-2 btn btn-warning" to={'/editar/'+color.id}>Editar</Link>
+          <Link className="me-lg-2 btn btn-warning" to={'/editar/'+color._id}>Editar</Link>
           </div>
         </Card.Body>
       </Card>

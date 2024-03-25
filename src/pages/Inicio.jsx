@@ -2,7 +2,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import ListaColores from "./ListaColores";
 import { useForm } from "react-hook-form";
 import "../../style/style.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { crearColor, editarColor, obtenerColor } from "../../helpers/queries";
