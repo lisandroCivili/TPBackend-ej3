@@ -4,7 +4,7 @@ Aplicacion para almacenar los datos que se cargan desde el frontend. Elegir colo
 
 ## Link del sitio
 
-[Lista de tareas](https://colores-rolling.netlify.app/)
+[Paleta de colores](https://colores-rolling.netlify.app/)
 
 ## Dependencies
 + cors
