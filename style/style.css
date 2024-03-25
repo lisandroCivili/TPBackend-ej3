@@ -10,3 +10,7 @@
     height: 50px; /* Altura ajustable según tu diseño */
     margin-bottom: 10px; /* Espacio debajo del color */
   }
+
+  .botonCancelar, .botonSubmit{
+    height: 50px;
+  }
