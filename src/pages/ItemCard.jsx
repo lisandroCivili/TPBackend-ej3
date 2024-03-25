@@ -1,4 +1,5 @@
-import { Container, Card, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import '../../style/style.css'
 
 const ItemCard = ({ color }) => {
@@ -14,7 +15,10 @@ const ItemCard = ({ color }) => {
         <Card.Body>
           <Card.Title>{color.hexaColor}</Card.Title>
           <div className="color-display" style={colorStyle}></div>
-          <Button variant="primary">Go somewhere</Button>
+          <div className="d-flex gap-3">
+          <Button variant="primary">Eliminar</Button>
+          <Link className="me-lg-2 btn btn-warning" to={'/editar/'+color.id}>Editar</Link>
+          </div>
         </Card.Body>
       </Card>
     </>

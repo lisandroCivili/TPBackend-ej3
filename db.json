@@ -1,16 +1,28 @@
 {
   "colores": [
     {
-      "id": "5ac6",
-      "hexaColor": "#000001"
+      "hexaColor": "#000000",
+      "id": "5ac6"
     },
     {
-      "id": "7aa6",
-      "hexaColor": "#e71313"
+      "hexaColor": "#ff0000",
+      "id": "7aa6"
     },
     {
-      "id": "b2db",
-      "hexaColor": "#000000"
+      "hexaColor": "#000000",
+      "id": "b2db"
+    },
+    {
+      "hexaColor": "#000000",
+      "id": "a94d"
+    },
+    {
+      "id": "e369",
+      "hexaColor": "#7086e1"
+    },
+    {
+      "hexaColor": "#ff0000",
+      "id": "4001"
     }
   ]
 }
