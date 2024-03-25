@@ -1,4 +1,4 @@
-import { Container, Card, Button } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import ItemCard from "./ItemCard";
 import "../../style/style.css";
 import { useEffect, useState } from "react";
@@ -24,7 +24,7 @@ const ListaColores = () => {
   return (
     <Container className="d-flex flex-wrap justify-content-center">
       {colores.map((color) => (
-        <ItemCard key={color.id} color={color} setColores={setColores} />
+        <ItemCard key={color._id} color={color} setColores={setColores} />
       ))}
     </Container>
   );
