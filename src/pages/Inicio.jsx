@@ -18,11 +18,22 @@ const Inicio = ({titulo, editando}) => {
   } = useForm();
 
   let boton
+  let cancelarButton;
+  const cancelarEdicion = () => {
+    navegacion('/');
+  };
   if (editando) {
     boton = 'Editar'
+    cancelarButton = (
+      <Button variant="danger" className="botonCancelar me-2" onClick={cancelarEdicion}>
+        Cancelar
+      </Button>
+    );
   }else{
     boton = 'Guardar'
+    cancelarButton = null;
   }
+
 
   const { id } = useParams();
   const navegacion = useNavigate();
@@ -106,10 +117,11 @@ const Inicio = ({titulo, editando}) => {
               {errors.hexaColor?.message}
             </Form.Text>
           </Form.Group>
-        <div className="my-4 pe-4 d-flex flex-column justify-content-center">
+        <div className="my-4 pe-4 d-flex gap-3 align-items-center">
           <Button variant="primary" className="botonSubmit" type="submit">
             {boton}
           </Button>
+          {cancelarButton}
         </div>
         </Form>
       </div>

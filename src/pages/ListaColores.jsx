@@ -24,7 +24,7 @@ const ListaColores = () => {
   return (
     <Container className="d-flex flex-wrap justify-content-center">
       {colores.map((color) => (
-        <ItemCard key={color.id} color={color} />
+        <ItemCard key={color.id} color={color} setColores={setColores} />
       ))}
     </Container>
   );
